@@ -127,7 +127,7 @@ export default function FullWidthGrid() {
       </div>
       <div className={button.root}>   
       <TextField  type="number" error={error.bikenumber===true} id="outlined-error-helper-text" label="Bike Number" onChange={(e)=>setForm({...form,bikenumber:e.target.value})} defaultValue={form.bikenumber} helperText={msg.bikenumber} variant="outlined"/>
-      <TextField id="datetime-local"label="Service Date"type="datetime-local" error={error.servicedate===true} defaultValue={date} helperText={msg.servicedate} InputLabelProps={{ shrink: true,}} onChange={(e)=>setForm({...form,servicedate:e.target.value})}/>    
+      <TextField id="datetime-local"label="Service Date & Time(10AM-5PM)"type="datetime-local" error={error.servicedate===true} defaultValue={date} helperText={msg.servicedate} InputLabelProps={{ shrink: true,}} onChange={(e)=>setForm({...form,servicedate:e.target.value})}/>    
       </div>
       <div className={button.root}>   
       <TextField  type="number" error={error.zipcode===true} id="outlined-error-helper-text" label="Zip code" onChange={(e)=>setForm({...form,zipcode:e.target.value})} defaultValue={form.zipcode} helperText={msg.zipcode} variant="outlined"/>
@@ -142,7 +142,7 @@ export default function FullWidthGrid() {
     <div>
         <Grid xs={12}>
           <div >
-          <Button style={{width:500,height:40,backgroundColor:"black",color:"#ffcb0c"}} variant="contained" varaint='h4' onClick={handleform}>Submit</Button> 
+          <Button style={{backgroundColor:"black",color:"#ffcb0c"}} variant="contained" varaint='h4' onClick={handleform}>Book service</Button> 
           </div>
 
           <div  style={{diplay:"flex",justifyContent:"center"}} >

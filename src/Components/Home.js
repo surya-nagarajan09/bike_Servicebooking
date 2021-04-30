@@ -46,7 +46,7 @@ const Home=()=>{
                <Grid item xs={12} >
                <Card style={{backgroundColor:"black"}} className={classes.root} >
                   <CardContent>
-                      <Typography style={{color:"#ffcb0c",}}variant="h1">Welcome to Book a Mech</Typography>
+                      <Typography style={{color:"#ffcb0c",padding:"30px"}}variant="h3">Welcome to Book a Mech</Typography>
                  </CardContent>
               </Card>
               </Grid>
